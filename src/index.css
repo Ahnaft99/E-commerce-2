@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "flowbite/src/themes/default";
+@theme{
+    --font-dm:"DM Sans", sans-serif;
+}
+.slick-dots .slick-active div{
+    border-right: 3px solid black !important;
+    color: black !important;
+}
+.slick-slider .slick-prev{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 15px;
+    background-color: #00000033;
+    color: #fff !important;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 999;
+}
+.slick-slider .slick-next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 15px;
+    background-color: #00000033;
+    color: #fff !important;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 999;
+
+}
