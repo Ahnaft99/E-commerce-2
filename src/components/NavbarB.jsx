@@ -16,11 +16,11 @@ const NavbarB = () => {
     let [cate, setCeta] = useState(false)
     let [accate, setacCeta] = useState(false)
     let [accateTwo, setacCetaTwo] = useState(false)
-    let cartData = useSelector((state)=>state.product.cardItem)
-    // console.log(cartData.product.cardItem);
+    let cartData = useSelector((state) => state.product.cardItem)
     
-    
-    useEffect(()=>{
+
+
+    useEffect(() => {
         document.addEventListener("click", (e) => {
             if (cateref.current.contains(e.target) == true) {
                 setCeta(!cate)
@@ -110,38 +110,12 @@ const NavbarB = () => {
                                 </div>
                                 <div className="relative">
                                     <Link to='cart'>
-                                      <FaShoppingCart className='ml-7 cursor-pointer w-[60px]' ref={accTwoateref} />
+                                        <FaShoppingCart className='ml-7 cursor-pointer w-[60px]' ref={accTwoateref} />
                                     </Link>
-                                    <div className="absolute top-[-20px] right-0 ">
-                                        <h1 className='text-red-700 font-dm font-bold text-[14px] bg-green-500 py-[3px] px-[8px]  rounded-[50%]'>{cartData.length}</h1> 
+                                    <div className="absolute top-[-5px] right-[10px] ">
+                                        <h1 className='text-[red] font-dm font-bold text-[20px] '>{cartData.length}</h1>
                                     </div>
-                                    {/* {accateTwo &&
-                                        <div className="absolute top-8 lg:right-[-30px] right-[-20px] z-99">
-                                            <div className="bg-[#F5F5F3] py-5 w-[358px] pl-5">
-                                                <div className="flex items-center relative">
-                                                    <div className="h-[80px] w-[80px] bg-[#979797]"></div>
-                                                    <div className="pl-5">
-                                                        <p className='text-[#262626] text-[14px] font-dm font-bold w-[131px]'>Black Smart Watch</p>
-                                                        <p className='text-[#262626] text-[14px] font-dm font-bold'>$44.00</p>
-                                                    </div>
-                                                    <div className=""><RxCross2 className='absolute top-[40%] right-5 cursor-pointer' /></div>
-                                                </div>
-                                            </div>
-                                            <div className="pt-[14px] w-[358px] pl-5 pb-[36px] bg-[#FFff]">
-                                                <div className="">
-                                                    <span className='text-[#767676] text-[16px] font-dm font-normal'>Subtotal:</span><span className='text-[#262626] text-[14px] font-dm font-bold'>$44.00</span>
-                                                </div>
-                                                <div className="flex items-center mt-[25px]">
-                                                    <div className="">
-                                                        <a href="#" className='px-10 border-2 py-4 text-[#262626] text-[14px] font-dm font-bold hover:bg-black hover:text-white'>View Cart</a>
-                                                    </div>
-                                                    <div className="ml-4">
-                                                        <a href="#" className='px-10 border-2 py-4 text-[#262626] text-[14px] font-dm font-bold hover:bg-black hover:text-white'>Checkout</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    } */}
+                                    
                                 </div>
                             </div>
                         </div>
