@@ -4,7 +4,7 @@ import { FaUser } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaCaretRight } from "react-icons/fa";
 import { useEffect, useRef, useState } from 'react';
-import { RxCross2 } from 'react-icons/rx';
+
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 

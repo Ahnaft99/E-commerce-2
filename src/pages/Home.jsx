@@ -7,11 +7,12 @@ import Special from "../components/Special"
 const Home = () => {
   return (
     <>
-      <Banner></Banner>
-      <Information></Information>
-      <Add></Add>
-      <Arrivals></Arrivals>
-      <Special></Special>
+    <Banner/>
+    <Information/>
+    <Add/>
+    <Arrivals/>
+    <Special/>
+     
     </>
   )
 }
